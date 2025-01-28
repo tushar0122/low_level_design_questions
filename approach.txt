@@ -1,0 +1,4 @@
+Approach 
+    => Clarify requirements 
+    => Map requirements to Functional Requirements 
+    => Write code
