@@ -1,4 +1,4 @@
 Approach 
-    => Clarify requirements 
+    => Clarify requirements functional and non functional  
     => Map requirements to Functional Requirements 
     => Write code

@@ -1,0 +1,13 @@
+Netflix
+
+Requirements
+    Functional Requirements
+        => User Authentication
+        => User Profiles 
+        => Filtering Content 
+            => Genres 
+            => Search 
+        => Recommmendation
+        => Content Management for Administrators 
+        => Multi device suppport
+    Non Functional Requirements
