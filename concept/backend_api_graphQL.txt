@@ -1,0 +1,4 @@
+GraphQL Api 
+    => A GraphQL API is a query language and runtime for building APIs that enables clients to request only the data they need, in the structure they need, from a server. Unlike traditional REST APIs, which have fixed endpoints and return predefined data, GraphQL provides flexibility, making it more efficient and developer-friendly.
+
+Key Features of GraphQL:
