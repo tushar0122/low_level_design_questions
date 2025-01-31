@@ -1,0 +1,9 @@
+Separation of Concern 
+    => Separation of Concerns (SoC) is a fundamental design principle that advocates for the division of a system into distinct sections—each addressing a particular set of functionalities.
+
+Elements of SoC
+    => Single Responsibility: Modules, classes, and methods should only have one reason to change. For example, a User class should handle user data, but not also display user data.
+
+    => Low Coupling: Components should minimize their interdependence.
+
+    => High Cohesion: Elements within a component should pertain to the same functionality.
