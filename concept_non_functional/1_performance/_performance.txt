@@ -1,8 +1,8 @@
-Scalability
-
-Scalability KPI 
-    => ThroughtPut for large number of requests
-    => Latency for large number of requests
+Performance
+    
+Performance KPI 
+    => ThroughtPut
+    => Latency
 
 What we need actually
     => Fast read 
@@ -17,8 +17,9 @@ How can we do
     => distributing load 
         => load balancing 
         => horizontal scaling 
-    => Using large memory and multi processor cpu 
+    => Increasing cpu and memory resources based on usages
         => Vertical Scaling
 
-How would you design a system to handle millions of requests per second?
-How do you ensure your system is horizontally scalable?
+What are the key considerations when designing a low-latency system?
+How do you optimize a system for high throughput?
+How do you handle hotspots in a distributed database?
