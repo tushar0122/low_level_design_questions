@@ -53,4 +53,29 @@ Dealing with eventual consistency
         => Put causally related events on same partition or if not possible keep track of causal dependencies
 
 Reading your own writes 
+    =>  Problem 
+        => You may write a change, read from a replicas and then not see the change 
+    => Solutions 
+        => Always read from leader for editable areas of application
+        => Always read from the leader or up to date replica for some period after a client write
+
+Monotonic Reads 
     => 
+
+Consistent Prefix Reads 
+    => Msgs in same partition Using timestamps
+
+Replication Log Implementation Options 
+    => Copy over SQL Statements 
+        => Bad because Some SQL statements are nondeterministic (example current time)
+    => Use internal write ahead log 
+        => Not scalable if changing database design engine, which bytes were changes, other database may have different data in different data in different locations on disk 
+     => Use logical log 
+        => Describes which rows were modified and how, allows for more future proofing if the underlying database engine changes in the future. 
+
+Conclusion 
+    Pros 
+        => All writes go throug one machine which ensure consistency across replicas 
+    Cons 
+        => Since all writes have to go through one machine write throughput may not be acceptable 
+            => Either need to partition the dataset and have a single leader per partition or look toward other replication strategy
