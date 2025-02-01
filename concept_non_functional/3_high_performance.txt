@@ -1,5 +1,8 @@
 Performance
     
+Performance increases with 
+    => Scalability
+
 Performance KPI 
     => ThroughtPut
     => Latency
