@@ -1,21 +1,18 @@
-Scalability
-
-Scalability KPI 
-    => ThroughtPut for large number of requests
-    => Latency for large number of requests
-
-What we need actually
-    => Fast read 
-    => Fast processing 
-    => Fast write 
-
-How can we do 
-    => Distributing load 
-        => load balancer  
-    => Scaling number of pods based on usage 
-        => Auto Horizontal Scaler 
-    => Scaling memory resources 
-        => Give flag for min max cpu memory resources 
-
 How would you design a system to handle millions of requests per second?
-How do you ensure your system is horizontally scalable?
+
+1. Load Balancing
+Use Global Load Balancers (GLB) (e.g., AWS Route 53, GCP Load Balancer) to distribute traffic across regions.
+Deploy Layer-7 Load Balancers (e.g., Nginx, Envoy, HAProxy) to route traffic intelligently.
+Implement Layer-4 Load Balancers (e.g., AWS ALB/NLB, Google Load Balancer) for TCP-level optimization.
+
+2. Scalable API Gateway
+Use API Gateways like Kong, Apigee, or AWS API Gateway to handle authentication, rate limiting, and caching.
+Integrate Web Application Firewall (WAF) to prevent DDoS attacks.
+
+3. Distributed Caching
+Deploy Redis or Memcached for frequently accessed data, reducing load on databases.
+Implement Content Delivery Networks (CDN) like Cloudflare or AWS CloudFront to cache responses globally.
+
+4. Asynchronous Processing
+Use Message Queues (e.g., Kafka, RabbitMQ, AWS SQS) to decouple services and ensure high throughput.
+Implement Event-Driven Architecture using Apache Kafka or Google Pub/Sub.
