@@ -1,0 +1,57 @@
+Vehicle => Entrance => Payment => Ticket => Parking Spot => Exit 
+
+Requirement Clarifications Q & A
+1. How many entraces and exit 
+    => For now 1
+
+Objects 
+    => Vehicle 
+        => Bike 
+        => Car 
+    => Ticket 
+    => Entrance Gate 
+    => Parking Spot
+        => Two Wheeler 
+        => Four Wheeler
+    => Exit Gate 
+    => PaymentStategy
+        => Hourly Based Charge 
+        => Minute Based Charge 
+
+Object Properties 
+    => Vehicle 
+        => vehicleNumber 
+        => vehicleType
+    => Ticket 
+        => entryTime
+        => parkingspot 
+        => price 
+    => EntranceGate 
+        => findParkingSpace
+        => UpdateParkingSpace
+        => GenerateTicket
+    => ParkingSpot 
+        => isEmpty
+        => Number 
+        => vehicleNumber 
+        => vehicleType
+    => Exit Gate 
+        => Cost calculate
+        => Payment 
+        => UpdateParkingSpace
+
+Enums 
+    => 2 Wheeler
+    => 4 Wheeler
+
+findParkingSpace
+    => Nearest parking space 
+
+Top Down 
+    => EntranceGate 
+    => 
+
+Bottom Up 
+    => Small small
+    ...
+    => preferred by him

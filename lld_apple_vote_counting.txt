@@ -1,0 +1,3 @@
+Build a class to read millions of votes from a ballot list and perform rank-based vote counting. Had to handle batching to solve for memory usage.
+
+https://leetcode.com/discuss/post/6579616/apple-ict3-full-stack-engineer-interview-si3q/
