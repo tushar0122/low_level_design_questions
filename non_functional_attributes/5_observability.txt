@@ -1,2 +1,0 @@
-Observability
-    => The ability to understand system state and behavior based on external outputs (logs, metrics, traces).

@@ -1,8 +1,0 @@
-5 min voting system 
-
-Database 
-    => Redis
-    => MongoDB
-    => Graph Database
-    => Ledger
-    => Apache Hadoop/Spark
